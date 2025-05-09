@@ -1,7 +1,9 @@
+import { useCart } from '../stores/cartStore';
+
 export default function Cart() {
   const { items, removeItem, updateQuantity } = useCart();
 
-  const total = items.reduce((sum, item) => sum + item.price * item.quantity, 0);
+  const total = items.reduce((sum: number, item) => sum + item.price * item.quantity, 0);
 
   return (
     <div className="container-custom py-8">
