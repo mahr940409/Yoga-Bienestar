@@ -1,6 +1,3 @@
-import React from 'react';
-import { useCart } from '../stores/cartStore';
-
 export default function Cart() {
   const { items, removeItem, updateQuantity } = useCart();
 

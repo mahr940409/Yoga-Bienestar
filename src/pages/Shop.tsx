@@ -1,9 +1,17 @@
-import React from 'react';
 import { products } from '../data/products';
 import { useCart } from '../stores/cartStore';
 
 export default function Shop() {
   const { addItem } = useCart();
+
+  const handleAddToCart = (product: typeof products[0]) => {
+    addItem({
+      id: product.id,
+      name: product.name,
+      price: product.price,
+      quantity: 1
+    });
+  };
 
   return (
     <div className="container-custom py-8">
@@ -22,7 +30,7 @@ export default function Shop() {
               <div className="flex justify-between items-center">
                 <span className="text-2xl font-bold">${product.price}</span>
                 <button
-                  onClick={() => addItem(product)}
+                  onClick={() => handleAddToCart(product)}
                   className="btn btn-primary"
                 >
                   Add to Cart
