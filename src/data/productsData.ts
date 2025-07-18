@@ -7,7 +7,7 @@ export interface Product {
   category: 'mats' | 'props' | 'clothing' | 'accessories' | 'smoothies';
 }
 
-export const products: Product[] = [
+export const productsData: Product[] = [
   {
     id: '1',
     name: 'Premium Yoga Mat',

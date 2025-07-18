@@ -1,6 +1,6 @@
 import { useCart } from '../stores/cartStore';
 
-export default function Cart() {
+export default function CartPage() {
   const { items, removeItem, updateQuantity } = useCart();
 
   const total = items.reduce((sum: number, item) => sum + item.price * item.quantity, 0);

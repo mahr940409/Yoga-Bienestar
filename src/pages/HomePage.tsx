@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
-import { products } from '../data/products';
+import { productsData } from '../data/productsData';
 
-export default function Home() {
-  const featuredProducts = products.slice(0, 3);
+export default function HomePage() {
+  const featuredProducts = productsData.slice(0, 3);
 
   return (
     <div className="flex flex-col">

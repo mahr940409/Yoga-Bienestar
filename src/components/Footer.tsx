@@ -46,9 +46,31 @@ export default function Footer() {
           </div>
         </div>
         
-        <div className="mt-8 pt-8 border-t border-accent-light text-center text-sm">
-          <p>© {new Date().getFullYear()} Yoga & Wellness. All rights reserved.</p>
-          <p className="mt-2">Developed by Inselectronic</p>
+        <div className="mt-8 pt-8 border-t border-accent-light text-center text-sm text-white">
+          <span>
+            © 2025 Yoga & Wellness. All rights reserved.<br />
+            Developed by{' '}
+            <a 
+              href="https://mahr94.netlify.app/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:text-accent-light transition-colors"
+            >
+              MAHR 94
+            </a>
+          </span>
+          <a 
+            href="https://mahr94.netlify.app/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-block ml-2 hover:opacity-80 transition-opacity"
+          >
+            <img 
+              src="/images/logo/developer-logo.png" 
+              alt="Logo MAHR 94" 
+              style={{ display: 'inline-block', verticalAlign: 'middle', height: '24px', width: '24px', borderRadius: '50%', objectFit: 'cover', background: 'transparent' }}
+            />
+          </a>
         </div>
       </div>
     </footer>

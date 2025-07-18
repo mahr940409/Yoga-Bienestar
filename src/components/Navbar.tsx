@@ -13,7 +13,12 @@ export default function Navbar() {
     <nav className="bg-white shadow-md sticky top-0 z-50">
       <div className="container-custom">
         <div className="flex justify-between items-center h-16">
-          <Link to="/" className="text-2xl font-semibold text-accent-dark">
+          <Link to="/" className="text-2xl font-semibold text-accent-dark flex items-center">
+            <img 
+              src="/images/logo/logo.png" 
+              alt="Yoga & Wellness Logo" 
+              style={{ height: '36px', width: '36px', borderRadius: '50%', objectFit: 'cover', marginRight: '12px', background: 'transparent' }}
+            />
             Yoga & Wellness
           </Link>
 
