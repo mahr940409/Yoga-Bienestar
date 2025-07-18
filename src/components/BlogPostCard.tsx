@@ -1,4 +1,4 @@
-import type { BlogPost } from '../data/blogPosts';
+import type { BlogPost } from '../data/blogPostsData';
 
 interface BlogPostCardProps {
   post: BlogPost;
